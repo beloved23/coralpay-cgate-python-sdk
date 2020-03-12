@@ -138,6 +138,7 @@ class CoralPayPGPEncryption:
             message=binary_response,
             # recipients=key_fingerprint,
             passphrase=passphrase,
+            extra_args=['--ignore-mdc-error'], # ignore the MDC error
             always_trust=True
         )
 
