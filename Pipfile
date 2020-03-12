@@ -12,8 +12,8 @@ pip = "==18.0"
 pylint = "*"
 
 [scripts]
-lint = "pylint --rcfile=.pylintrc api.py test_script.py lib"
-api = "python3 api.py"
+lint = "pylint --rcfile=.pylintrc test_script.py lib"
+api = "python3 test_script.py"
 
 [requires]
 python_version = "3.7"
